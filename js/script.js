@@ -34,6 +34,5 @@
   setupModal('.link-item.kosher', 'kosherModal', 'kosherModalClose');
   setupModal('.link-item.whatsapp', 'whatsappModal', 'whatsappModalClose');
   setupModal('.link-item.site', 'siteModal', 'siteModalClose');
-  setupModal('.link-item.delivery', 'deliveryModal', 'deliveryModalClose');
   setupModal('.link-item.tenbis', 'tenbisModal', 'tenbisModalClose');
 })();

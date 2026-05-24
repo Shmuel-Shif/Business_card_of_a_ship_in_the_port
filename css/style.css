@@ -176,8 +176,12 @@ body::before {
 .link-item.instagram .icon { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 .link-item.whatsapp .icon { background: #25D366; }
 .link-item.tiktok .icon { background: #000; }
-.link-item.delivery .icon { background: #00c2ff; }
-.link-item.tenbis .icon { background: linear-gradient(135deg, #ffde59, #ffb300); }
+.link-item.delivery .icon,
+.link-item.tenbis .icon {
+  background: transparent;
+  overflow: hidden;
+  padding: 0;
+}
 .link-item.menu .icon { background: linear-gradient(135deg, var(--fire), var(--fire-red)); }
 .link-item.kosher .icon { background: linear-gradient(135deg, #22c55e, #16a34a); }
 .link-item.site .icon { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
@@ -186,6 +190,14 @@ body::before {
   width: 24px;
   height: 24px;
   fill: white;
+}
+
+.link-item .icon.icon-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
 }
 
 .menu-modal-backdrop {
@@ -268,8 +280,9 @@ body::before {
 }
 
 .menu-images img {
-  width: 48%;
+  width: calc((100% - 24px) / 3);
   max-height: calc(100vh - 180px);
+  object-fit: contain;
 }
 
 .menu-modal-close {
