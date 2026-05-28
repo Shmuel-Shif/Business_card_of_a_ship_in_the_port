@@ -19,12 +19,22 @@
     </div>
 
     <div class="links">
+      <a href="#info" class="link-item info">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 10v7" />
+            <path d="M12 7h.01" />
+          </svg>
+        </span>
+        מידע ופעילות
+      </a>
+
       <a href="#kosher" class="link-item kosher">
         <span class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M4 13c0-1.5 1.2-2.5 3.5-3l2.5-.5 2.5.5C15.8 10.5 17 11.5 17 13" />
-            <path d="M6 13l1 4h10l1-4" />
-            <path d="M9 8c.3-1.3 1.1-2 3-2s2.7.7 3 2" />
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z" />
+            <path d="M8.5 12.5l2.2 2.2L15.8 9.6" />
           </svg>
         </span>
         כשרות
@@ -35,19 +45,6 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </span>
         תפריט
-      </a>
-
-      <a href="#site" class="link-item site">
-        <span class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="M3 10h18" />
-            <circle cx="8" cy="8" r="1" />
-            <circle cx="11" cy="8" r="1" />
-            <circle cx="14" cy="8" r="1" />
-          </svg>
-        </span>
-        אתר
       </a>
 
       <a href="#whatsapp" class="link-item whatsapp">
@@ -78,11 +75,18 @@
         משלוחה
       </a>
 
-      <a href="#tenbis" class="link-item tenbis">
+      <a href="https://www.10bis.co.il/next/restaurants/menu/delivery/47593/%D7%A9%D7%99%D7%A3-%D7%91%D7%A0%D7%9E%D7%9C/" target="_blank" rel="noopener" class="link-item tenbis">
         <span class="icon icon-logo">
           <img src="image/logo-10bis.png" alt="תן ביס">
         </span>
         תן ביס
+      </a>
+
+      <a href="#wolt" class="link-item wolt">
+        <span class="icon icon-logo">
+          <img src="image/logo-wolt.png" alt="וולט">
+        </span>
+        וולט
       </a>
      
     </div>
@@ -90,21 +94,39 @@
     <p class="footer">כרטיס ביקור דיגיטלי • שיף בנמל</p>
   </div>
 
-  <div class="menu-modal-backdrop menu-backdrop kosher-backdrop" id="menuModal">
+  <div class="menu-modal-backdrop menu-backdrop" id="menuModal">
     <div class="menu-modal">
       <button class="menu-modal-close" id="menuModalClose" aria-label="סגירת תפריט">✕</button>
-      <div class="menu-images">
-        <img src="image/menu.png" alt="תפריט">
-        <img src="image/menu2.png" alt="תפריט 2">
-        <img src="image/menu3.png" alt="תפריט 3">
+      <div class="whatsapp-modal-links">
+        <a href="https://shmuel-shif.github.io/menu-shif-banamel/" target="_blank" rel="noopener" class="link-item menu">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </span>
+          תפריט ישיבה
+        </a>
+
+        <a href="https://shmuel-shif.github.io/shif-banamel-Digital-Menu/" target="_blank" rel="noopener" class="link-item menu digital">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </span>
+         אתר תפריט דיגיטלי
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="menu-modal-backdrop menu-backdrop" id="siteModal">
+  <div class="menu-modal-backdrop menu-backdrop" id="infoModal">
     <div class="menu-modal">
-      <button class="menu-modal-close" id="siteModalClose" aria-label="סגירת אתר">✕</button>
-      <p class="coming-soon-text">האתר עדיין בפיתוח<br>יהיה מוכן בקרוב</p>
+      <button class="menu-modal-close" id="infoModalClose" aria-label="סגירת מידע ופעילות">✕</button>
+      <div class="coming-soon-text" style="text-align: right;">
+        <div style="font-weight: 700; margin-bottom: 10px;">שעות פעילות</div>
+        <div>א - ד 11:30 עד 00:00</div>
+        <div>ה 11:30 עד 02:00</div>
+        <div style="margin-top: 10px; font-weight: 600;">איסוף עצמי ומשלוחים בלבד!</div>
+        <div style="margin-top: 10px;">מהשעה 17:00 בכל הימים פתוח לקהל הרחב וישיבה במקום.</div>
+        <div style="margin-top: 12px; font-weight: 700;">כתובת</div>
+        <div>שיף בנמל, כיכר פלומר 25, תל אביב.</div>
+      </div>
     </div>
   </div>
 
@@ -129,9 +151,9 @@
     </div>
   </div>
 
-  <div class="menu-modal-backdrop menu-backdrop" id="tenbisModal">
+  <div class="menu-modal-backdrop menu-backdrop" id="woltModal">
     <div class="menu-modal">
-      <button class="menu-modal-close" id="tenbisModalClose" aria-label="סגירת תן ביס">✕</button>
+      <button class="menu-modal-close" id="woltModalClose" aria-label="סגירת וולט">✕</button>
       <p class="coming-soon-text">בקרוב...</p>
     </div>
   </div>
